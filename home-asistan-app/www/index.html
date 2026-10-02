@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F5F7FC">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Home Asistan">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="application-name" content="Home Asistan">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFhUlEQVR42u3dQY7UMBCF4WdrjsYdgNmwggtxAHYgcUlYsUBKZpK47CpX/b3LqDXyxF+nn6OMX/vw8Y/+fzWnQ+Nf3sKMxPactHUj6chAxtlhRwYyzg47MpBxdtiRgYyzw44MZJyNpCMDGWcj6chAxtlIOjKQobdXK8hAxvFqBRnIOF6tIAMZZ2/oyECG3r19jgxkrA6kyNhUxvRAiox9ZcwNpMjYWsbEQIqM3WXMCqTISCBjSiBFRg4Z9oEUGWlkGAdSZGSSYRlIkZFMhlkgRUY+GTaBFBkpZRgEUmRklTEaSJGRWMZQIEVGbhnPAyky0st4GEiRUUHGk0CKjCIybgdSZNSRcS+QIqOUjBuBFBnVZFwNpMgoKONSIEVGTRnvB1JklJXR2puBFBmVZbwVSJFRXMZpIEUGMiS9BJTx+5cGX6+fV8v48XN0zN9eY8k4CKShrhkjL8drxrxhr5QxeZNaZOwsQxO3YPCTIWQYTVZHRgQZiidDU7ZgMF2bIMNLhuy3YCgpo2WUIeMtGJCRSIbpFgxhZAgZFjLsAikyIkVpExlGgXTm3XFkeMmwCKTICHwHb0TGcCBFRl4ZY4E0qgwhw0LGQCBFRnYZTwPpwuczishQPBmPAikyNrqEtKHp6MhAhkUg3USGkGEh404gRUYxGZcDqd8TwkVkKJ6Ma4EUGRtdQprldHRkIONRIN1ThpAxfZNaZNSWcR5Iw/yPWhEZiifjJJAiY6NLSJs4HR0ZyLgWSJGBjONAmkWGkGG8J1jUXRKKyFA8Gf8CKTI2uoS0ddPRkYGMa4EUGcg4DqRZZCwbZ24ZCtGaEGcJEBZ085mOl5QyxnfocnwFkSHn1oSFn0VkzA2kyCglQ26tCcgIL0M+rQlAGVuKLzv/HRnIeBhIkVFWxjuBFBmVZWhdawIydpOhRa0JQBlbuXid/44MZFwNpMhAxnEgRQYyjgMpMpBxHEiREdyKWyANJQMrcaajIwMZZye/IwMZmt6agIxcMkIEUmSEjX09moyGlDDT8ZJSxtfX1U9Nf/+ZTYZnIJ16zcizP4DjdHgF0pXfJsh4fBI6MpBh2powU0YrKUPxZGjxHdKsMlpGGUsDKTL2krEukK6UIWQYfTw6MpDhFkg1trdfERmKJ2N6IC0iw3YpHkTG3ECKjK1ltDYtkDrKEDIsZMwKpMhIIGNKIJWMd9qvIEPxZNgH0poyWkYZxoEUGZlkWN4hRUYyGWaBNJQMIcPo7+rRZLSSMhRPhkEgRUZWGaOBFBnmI48jw7o1ARmJZMiyNYFe+FwyZNaaQJOv37AnyXgSSJFRRIYMWhOQ4fflMlXGcGsCMvLK0FBrAr3wqWXoeWsCTb5+sWONDD1sTUBGARl60pqADL8vl5Uy7rcmIKOMDN1rTaAXvpIM3WhNoOPZL3a4yNDV1gRk1JOhS60JyPD7cnGUcaE1ARlVZeid2+d7yhAyprcmICPLXX/r1gQ/GQ0ZMWQcr1aQoSx38KxbE5CBjH8/aV8+/Qkow/EJ4YD7gbrI+D+QIgMZh6sVZCDjeLWCDGQcr1aQgYyzN3RkIEOhWxOQEU+GQrQmICOkDPm3JiAjqgw5tyYgI7AM19YEZMSWIbfWBGSElyGf1gRk7CBDDq0JyNhEhla3JiBjHxkTAykydpehda0JyNhNhha1JiBjQxla0ZqAjD1laHprAjK2lTG5NQEZO8vQxNYEZGwuQ7NaE5CxvwxNaU1ARgoZsm9NQEYWGdatCchIJEOWrQnIyCVDZq0JyEgnQzatCcjIKEMGrQnISCpjuDUBGXllaKg1ARmpZeh5awIyssvQw9YEZBSQoSetCcioIeN+awIyysjQvdYEZFSSoRutCcgoJkNXWxOQUU+GLrUmIKOkjNb0F+38IlEF8FuiAAAAAElFTkSuQmCC">
+<title>Home Asistan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F3F5FF;
+    --surface: #FFFFFF;
+    --ink: #121B33;
+    --muted: #667291;
+    --line: #DFE5F5;
+    --brand: #4457FF;
+    --brand-2: #8A5CFF;
+    --brand-3: #18B6E8;
+    --brand-ink: #FFFFFF;
+    --code-bg: #ECEFFA;
+    --card: rgba(255, 255, 255, .78);
+    --glass: rgba(255, 255, 255, .70);
+    --shadow: 0 6px 24px rgba(40, 55, 130, .10);
+    --glow: rgba(98, 84, 255, .36);
+    --blob1: rgba(110, 125, 255, .42);
+    --blob2: rgba(195, 140, 255, .40);
+    --blob3: rgba(60, 200, 240, .34);
+    --dot: rgba(68, 87, 255, .17);
+    --danger: #C23B3B;
+    --font-display: "Sora", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-body: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #080C1C; --surface: #131A31; --ink: #E9EDFA; --muted: #93A0C2; --line: #263050;
+      --brand: #8593FF; --brand-2: #B08CFF; --brand-3: #5CD6FF; --brand-ink: #0B1020; --code-bg: #0F1529;
+      --card: rgba(24, 32, 60, .72); --glass: rgba(19, 26, 49, .64); --shadow: 0 8px 28px rgba(0, 0, 0, .40);
+      --glow: rgba(133, 147, 255, .34); --blob1: rgba(70, 85, 230, .40); --blob2: rgba(140, 80, 230, .34);
+      --blob3: rgba(30, 150, 200, .28); --dot: rgba(160, 175, 255, .14); --danger: #FF8A8A;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #080C1C; --surface: #131A31; --ink: #E9EDFA; --muted: #93A0C2; --line: #263050;
+    --brand: #8593FF; --brand-2: #B08CFF; --brand-3: #5CD6FF; --brand-ink: #0B1020; --code-bg: #0F1529;
+    --card: rgba(24, 32, 60, .72); --glass: rgba(19, 26, 49, .64); --shadow: 0 8px 28px rgba(0, 0, 0, .40);
+    --glow: rgba(133, 147, 255, .34); --blob1: rgba(70, 85, 230, .40); --blob2: rgba(140, 80, 230, .34);
+    --blob3: rgba(30, 150, 200, .28); --dot: rgba(160, 175, 255, .14); --danger: #FF8A8A;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  html, body { height: 100%; margin: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.55; -webkit-tap-highlight-color: transparent; }
+  *, *::before, *::after { box-sizing: inherit; }
+  button { font: inherit; color: inherit; }
+  .app { display: flex; flex-direction: column; height: 100%; max-width: 760px; margin: 0 auto; position: relative; z-index: 1; }
+
+  /* ambient background */
+  .bg { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; background: var(--bg); }
+  .bg i { position: absolute; border-radius: 50%; filter: blur(64px); will-change: transform; }
+  .bg i:nth-child(1) { width: 62vmax; height: 62vmax; left: -22vmax; top: -20vmax; background: var(--blob1); animation: drift1 24s ease-in-out infinite alternate; }
+  .bg i:nth-child(2) { width: 56vmax; height: 56vmax; right: -24vmax; top: 22%; background: var(--blob2); animation: drift2 28s ease-in-out infinite alternate; }
+  .bg i:nth-child(3) { width: 52vmax; height: 52vmax; left: 8%; bottom: -26vmax; background: var(--blob3); animation: drift1 32s ease-in-out infinite alternate-reverse; }
+  .bg::after { content: ""; position: absolute; inset: 0; background-image: radial-gradient(var(--dot) 1.2px, transparent 1.5px); background-size: 22px 22px;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 75%); mask-image: linear-gradient(180deg, #000 0%, transparent 75%); }
+  @keyframes drift1 { to { transform: translate(8vmax, 6vmax) scale(1.12); } }
+  @keyframes drift2 { to { transform: translate(-9vmax, -5vmax) scale(.92); } }
+  @keyframes twinkle { 0%, 100% { opacity: .25; transform: scale(.8) rotate(0deg); } 50% { opacity: 1; transform: scale(1.15) rotate(18deg); } }
+  @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* header */
+  header { position: relative; display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--glass); backdrop-filter: blur(16px) saturate(1.5); -webkit-backdrop-filter: blur(16px) saturate(1.5); }
+  header::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1.5px; background: linear-gradient(90deg, transparent, var(--brand), var(--brand-2), var(--brand-3), transparent); opacity: .75; }
+  .mark { width: 36px; height: 36px; flex: none; filter: drop-shadow(0 4px 10px var(--glow)); }
+  .brand { font-family: var(--font-display); font-weight: 700; font-size: 20px; letter-spacing: -0.02em; flex: 1;
+    background: linear-gradient(90deg, var(--ink) 10%, var(--brand) 60%, var(--brand-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .brand::after { content: "✦"; -webkit-text-fill-color: var(--brand-3); color: var(--brand-3); font-size: 12px; margin-left: 6px; vertical-align: super; display: inline-block; animation: twinkle 2.6s ease-in-out infinite; }
+  .icon-btn { border: 0; background: transparent; color: var(--muted); width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; cursor: pointer; }
+  .icon-btn:hover, .icon-btn:active { background: color-mix(in srgb, var(--brand) 12%, transparent); color: var(--brand); }
+  :is(.icon-btn, .card, .send, .copy, .fab, .mode, textarea):focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
+
+  /* scroll area */
+  #messages { flex: 1; overflow-y: auto; padding: 18px 16px 8px; display: flex; flex-direction: column; gap: 18px; scroll-behavior: smooth; }
+  #messages::-webkit-scrollbar { width: 6px; }
+  #messages::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--brand) 30%, transparent); border-radius: 6px; }
+  .row { display: flex; gap: 10px; max-width: 100%; animation: rise .35s ease both; }
+  .row.user { justify-content: flex-end; }
+  .bubble { position: relative; max-width: 82%; padding: 10px 16px; border-radius: 20px 20px 6px 20px; color: #fff; white-space: pre-wrap; overflow-wrap: anywhere;
+    background: linear-gradient(135deg, var(--brand), var(--brand-2) 70%, color-mix(in srgb, var(--brand-2) 70%, var(--brand-3)));
+    box-shadow: 0 8px 22px var(--glow), inset 0 1px 0 rgba(255, 255, 255, .38); }
+  :root[data-theme="dark"] .bubble { color: #0B1020; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .bubble { color: #0B1020; } }
+  .avatar { width: 30px; height: 30px; flex: none; margin-top: 2px; filter: drop-shadow(0 0 8px var(--glow)); }
+  .body { min-width: 0; flex: 0 1 auto; max-width: calc(100% - 40px); }
+  .content { overflow-wrap: anywhere; }
+  .content:not(:has(.imgcard, .imgph)) { background: var(--glass); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid color-mix(in srgb, var(--brand) 16%, var(--line));
+    border-radius: 20px 20px 20px 6px; padding: 11px 16px; box-shadow: var(--shadow); }
+  .content p { margin: 0 0 10px; white-space: pre-wrap; }
+  .content p:last-child { margin-bottom: 0; }
+  .content p.h { font-family: var(--font-display); font-weight: 600; font-size: 16px; margin-top: 6px; }
+  .content ul, .content ol { margin: 0 0 10px; padding-left: 22px; }
+  .content li { margin: 3px 0; }
+  .content li::marker { color: var(--brand); }
+  .content code { font-family: var(--font-mono); font-size: .88em; background: var(--code-bg); padding: 2px 6px; border-radius: 6px; }
+  .content pre { margin: 0 0 10px; background: var(--code-bg); border: 1px solid var(--line); border-left: 3px solid var(--brand-2); border-radius: 12px; padding: 12px 14px; overflow-x: auto; }
+  .content pre code { background: none; padding: 0; font-size: 13.5px; line-height: 1.5; }
+  .content strong { font-weight: 700; }
+  .err { color: var(--danger); }
+  .actions { display: flex; gap: 4px; margin-top: 6px; flex-wrap: wrap; }
+  .copy { border: 0; background: transparent; color: var(--muted); font-size: 13px; padding: 4px 9px; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; }
+  .copy:hover { background: color-mix(in srgb, var(--brand) 12%, transparent); color: var(--brand); }
+
+  /* typing */
+  .dots { display: inline-flex; gap: 5px; align-items: center; height: 1.55em; }
+  .dots i { width: 8px; height: 8px; border-radius: 50%; background: linear-gradient(135deg, var(--brand), var(--brand-2)); animation: blink 1.2s infinite ease-in-out; }
+  .dots i:nth-child(2) { animation-delay: .15s; }
+  .dots i:nth-child(3) { animation-delay: .3s; }
+  @keyframes blink { 0%, 80%, 100% { opacity: .25; transform: scale(.8); } 40% { opacity: 1; transform: scale(1.05); } }
+
+  /* welcome */
+  .welcome { margin: auto 0; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 8px 0 12px; }
+  .orbwrap { position: relative; width: 156px; height: 156px; display: grid; place-items: center; margin-bottom: 14px; }
+  .orbwrap::before, .orbwrap::after { content: ""; position: absolute; border-radius: 50%; }
+  .orbwrap::before { inset: 0; border: 1.5px dashed color-mix(in srgb, var(--brand) 50%, transparent); animation: spin 26s linear infinite; }
+  .orbwrap::after { inset: 15px; border: 1.5px dotted color-mix(in srgb, var(--brand-2) 60%, transparent); animation: spin 18s linear infinite reverse; }
+  .sp { position: absolute; color: var(--brand-3); animation: twinkle 3s ease-in-out infinite; line-height: 1; }
+  .sp.s1 { top: 4px; right: 8px; font-size: 20px; }
+  .sp.s2 { bottom: 12px; left: -2px; font-size: 14px; color: var(--brand-2); animation-delay: .8s; }
+  .sp.s3 { top: 26px; left: -10px; font-size: 10px; animation-delay: 1.6s; }
+  .sp.s4 { bottom: 0; right: -6px; font-size: 16px; color: var(--brand-2); animation-delay: 2.2s; }
+  .orb { width: 104px; height: 104px; border-radius: 50%; position: relative; display: grid; place-items: center;
+    background: radial-gradient(circle at 30% 25%, #A9B5FF 0, transparent 55%), radial-gradient(circle at 75% 80%, #C69BFF 0, transparent 60%), radial-gradient(circle at 50% 50%, #4457FF, #2B3BD1);
+    box-shadow: 0 16px 48px var(--glow), 0 0 0 6px color-mix(in srgb, var(--brand) 10%, transparent), inset 0 -8px 20px rgba(20, 20, 90, .25), inset 0 6px 12px rgba(255, 255, 255, .25);
+    animation: float 5s ease-in-out infinite; }
+  .orb svg { width: 52px; height: 52px; filter: drop-shadow(0 2px 6px rgba(10, 10, 80, .35)); }
+  @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+  .welcome h1 { font-family: var(--font-display); font-weight: 700; font-size: 29px; line-height: 1.15; letter-spacing: -0.03em; margin: 0 0 8px;
+    background: linear-gradient(100deg, var(--ink) 15%, var(--brand) 55%, var(--brand-2) 85%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .welcome p { margin: 0 0 24px; color: var(--muted); max-width: 32ch; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 100%; }
+  .card { text-align: left; color: var(--ink); cursor: pointer; display: flex; flex-direction: column; gap: 9px; font-size: 14.5px; line-height: 1.35; padding: 13px 14px; border-radius: 18px; border: 1.3px solid transparent;
+    background: linear-gradient(var(--card), var(--card)) padding-box,
+                linear-gradient(135deg, color-mix(in srgb, var(--brand) 55%, transparent), color-mix(in srgb, var(--brand-2) 22%, transparent) 50%, color-mix(in srgb, var(--brand-3) 50%, transparent)) border-box;
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: var(--shadow); animation: rise .55s ease both; transition: transform .15s; }
+  .card:nth-child(1) { animation-delay: .05s; } .card:nth-child(2) { animation-delay: .12s; }
+  .card:nth-child(3) { animation-delay: .19s; } .card:nth-child(4) { animation-delay: .26s; }
+  .card:active { transform: scale(.97); }
+  .card .e { width: 38px; height: 38px; border-radius: 13px; display: grid; place-items: center; font-size: 20px; line-height: 1;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--brand) 18%, transparent), color-mix(in srgb, var(--brand-2) 18%, transparent)); }
+
+  /* fab */
+  .fab { position: absolute; right: 16px; bottom: 100px; width: 42px; height: 42px; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--brand) 25%, var(--line)); background: var(--glass); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); color: var(--brand); display: none; place-items: center; cursor: pointer; box-shadow: 0 8px 22px var(--glow); }
+  .fab.show { display: grid; }
+
+  /* composer */
+  .composer { padding: 8px 12px 12px; }
+  .note { text-align: center; font-size: 13px; color: var(--danger); padding: 0 8px 8px; }
+  .pill { display: flex; align-items: flex-end; gap: 4px; border-radius: 28px; padding: 6px; border: 1.5px solid transparent;
+    background: linear-gradient(var(--surface), var(--surface)) padding-box,
+                linear-gradient(110deg, color-mix(in srgb, var(--brand) 55%, var(--line)), color-mix(in srgb, var(--brand-2) 45%, var(--line)), color-mix(in srgb, var(--brand-3) 55%, var(--line)), color-mix(in srgb, var(--brand) 55%, var(--line))) border-box;
+    background-size: 100% 100%, 300% 100%; box-shadow: var(--shadow); transition: box-shadow .2s; }
+  .pill:focus-within { box-shadow: 0 0 0 4px color-mix(in srgb, var(--brand) 14%, transparent), 0 10px 30px var(--glow); animation: borderflow 5s ease-in-out infinite alternate; }
+  @keyframes borderflow { from { background-position: 0 0, 0% 0; } to { background-position: 0 0, 100% 0; } }
+  textarea { flex: 1; resize: none; border: 0; outline: 0; background: transparent; color: var(--ink); font: inherit; max-height: 140px; min-height: 32px; padding: 6px 4px; }
+  textarea:focus-visible { outline: 0; }
+  textarea::placeholder { color: var(--muted); }
+  .send { width: 42px; height: 42px; flex: none; border: 0; border-radius: 50%; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; display: grid; place-items: center; cursor: pointer; transition: opacity .15s, transform .15s; box-shadow: 0 6px 16px var(--glow), inset 0 1px 0 rgba(255, 255, 255, .4); }
+  .send:active:not(:disabled) { transform: scale(.92); }
+  :root[data-theme="dark"] .send { color: #0B1020; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .send { color: #0B1020; } }
+  .send:disabled { opacity: .35; cursor: default; box-shadow: none; }
+  .hint { text-align: center; font-size: 11.5px; color: var(--muted); margin-top: 7px; }
+  .mode { width: 42px; height: 42px; flex: none; border: 0; border-radius: 50%; background: transparent; color: var(--muted); display: grid; place-items: center; cursor: pointer; transition: background .15s, color .15s; }
+  .mode:hover { background: color-mix(in srgb, var(--brand) 10%, transparent); color: var(--brand); }
+  .mode.on { background: color-mix(in srgb, var(--brand) 18%, transparent); color: var(--brand); box-shadow: 0 0 14px var(--glow); }
+
+  /* generated images */
+  .imgcard { width: min(100%, 400px); border-radius: 20px; overflow: hidden; border: 1.5px solid transparent;
+    background: linear-gradient(var(--code-bg), var(--code-bg)) padding-box, linear-gradient(135deg, var(--brand), var(--brand-2), var(--brand-3)) border-box; box-shadow: 0 12px 34px var(--glow); }
+  .imgcard img { display: block; width: 100%; height: auto; }
+  .imgph { width: min(100%, 400px); aspect-ratio: 1 / 1; border-radius: 20px; border: 1.5px dashed color-mix(in srgb, var(--brand) 40%, var(--line)); display: flex; flex-direction: column; gap: 10px; align-items: center; justify-content: center; color: var(--muted); font-size: 14px;
+    background: linear-gradient(110deg, var(--code-bg) 30%, var(--surface) 50%, var(--code-bg) 70%); background-size: 200% 100%; animation: shimmer 1.6s linear infinite; }
+  @keyframes shimmer { to { background-position: -200% 0; } }
+
+  /* settings sheet */
+  .sheet { position: fixed; inset: 0; z-index: 20; display: flex; align-items: flex-end; justify-content: center; background: rgba(8, 12, 28, .55); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); animation: fade .2s ease both; }
+  .sheet[hidden] { display: none; }
+  .sheet-card { width: 100%; max-width: 560px; background: var(--surface); border-radius: 26px 26px 0 0; padding: 22px 20px calc(22px + env(safe-area-inset-bottom, 0px)); box-shadow: 0 -12px 40px var(--glow); border-top: 1.5px solid color-mix(in srgb, var(--brand) 40%, var(--line)); animation: rise .3s ease both; }
+  .sheet-card h2 { font-family: var(--font-display); font-size: 20px; margin: 0 0 14px; letter-spacing: -0.02em; }
+  .sheet-card label { display: block; font-size: 14px; font-weight: 700; color: var(--muted); margin: 12px 0 6px; }
+  .sheet-card input, .sheet-card select { width: 100%; font: inherit; font-size: 16px; color: var(--ink); background: var(--bg); border: 1.5px solid var(--line); border-radius: 14px; padding: 12px 14px; }
+  .sheet-card input:focus, .sheet-card select:focus { outline: 0; border-color: var(--brand); box-shadow: 0 0 0 4px color-mix(in srgb, var(--brand) 14%, transparent); }
+  .sheet-note { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
+  .sheet-actions { display: flex; gap: 10px; margin-top: 20px; }
+  .sheet-actions button { flex: 1; min-height: 46px; border-radius: 14px; border: 1.5px solid var(--line); background: transparent; font-weight: 700; cursor: pointer; }
+  .sheet-actions button.primary { border: 0; color: #fff; background: linear-gradient(135deg, var(--brand), var(--brand-2)); box-shadow: 0 6px 16px var(--glow); }
+  :root[data-theme="dark"] .sheet-actions button.primary { color: #0B1020; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sheet-actions button.primary { color: #0B1020; } }
+  .sheet-link { background: none; border: 0; color: var(--danger); font-size: 13px; margin-top: 14px; padding: 6px 0; cursor: pointer; }
+  .keybtn { margin-bottom: 18px; border: 0; cursor: pointer; padding: 10px 18px; border-radius: 999px; font-weight: 700; color: #fff; background: linear-gradient(135deg, var(--brand), var(--brand-2)); box-shadow: 0 6px 18px var(--glow); }
+  :root[data-theme="dark"] .keybtn { color: #0B1020; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .keybtn { color: #0B1020; } }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    #messages { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="app">
+  <header>
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4457FF"/><stop offset="1" stop-color="#8A5CFF"/></linearGradient></defs>
+      <rect width="40" height="40" rx="12" fill="url(#g)"/>
+      <path d="M11 9h4.6v8h8.8V9H29v22h-4.6v-9.5h-8.8V31H11z" fill="#fff" fill-rule="evenodd"/>
+    </svg>
+    <div class="brand">Home Asistan</div>
+    <button class="icon-btn" id="settings" type="button" aria-label="Ayarlar" title="Ayarlar">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>
+    </button>
+    <button class="icon-btn" id="theme" type="button" aria-label="Temayı değiştir" title="Temayı değiştir"></button>
+    <button class="icon-btn" id="clear" type="button" aria-label="Yeni sohbet" title="Yeni sohbet">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+    </button>
+  </header>
+
+  <main id="messages" aria-live="polite"></main>
+
+  <button class="fab" id="fab" type="button" aria-label="En alta git">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </button>
+
+  <div class="composer">
+    <div class="note" id="note" hidden></div>
+    <div class="pill">
+      <button class="mode" id="mode" type="button" aria-pressed="false" aria-label="Görsel modu" title="Görsel üret">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="9" cy="9" r="1.8"/><path d="m21 16-5-5L5 21"/></svg>
+      </button>
+      <textarea id="input" rows="1" placeholder="Home Asistan'a sor…" aria-label="Mesaj"></textarea>
+      <button class="send" id="send" type="button" aria-label="Gönder" disabled></button>
+    </div>
+    <div class="hint" id="hint">Home Asistan hata yapabilir. Önemli bilgileri kontrol et.</div>
+  </div>
+</div>
+
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <h2 id="sheetTitle">Ayarlar</h2>
+    <label for="keyInput">Anthropic API anahtarı</label>
+    <input id="keyInput" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="sk-ant-…">
+    <p class="sheet-note">Anahtar yalnızca bu telefonda saklanır. console.anthropic.com adresinden ücretsiz oluşturabilirsin. Kullanım ücreti kendi hesabından düşer.</p>
+    <label for="modelSel">Model</label>
+    <select id="modelSel">
+      <option value="claude-sonnet-5-5">Sonnet 5.5 · dengeli</option>
+      <option value="claude-haiku-4-5-20251001">Haiku 4.5 · hızlı ve ucuz</option>
+      <option value="claude-opus-5-5">Opus 5.5 · en güçlü</option>
+    </select>
+    <div class="sheet-actions">
+      <button type="button" id="sheetCancel">Vazgeç</button>
+      <button type="button" id="sheetSave" class="primary">Kaydet</button>
+    </div>
+    <button type="button" class="sheet-link" id="keyRemove">Kayıtlı anahtarı sil</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  var SYSTEM = "Sen Home Asistan adlı, telefonda çalışan yardımsever bir yapay zekâ asistanısın. " +
+    "Kullanıcı hangi dilde yazarsa o dilde yanıt ver (varsayılan Türkçe). Telefon ekranında okunacağı için yanıtları kısa, net ve anlaşılır yaz. " +
+    "Gerekirse kısa listeler ve **kalın** vurgu kullanabilirsin ama başlık ve tabloyu abartma. Bilmediğin bir şeyi uydurma.";
+  var STORE_KEY = "andoai:history";
+  var THEME_KEY = "andoai:theme";
+  var SUGGESTIONS = [
+    { e: "🍳", t: "Bugün ne yemek yapsam?" },
+    { e: "✍️", t: "Bu mesajı daha kibar yaz" },
+    { e: "🌍", t: "İngilizce çalışmama yardım et" },
+    { e: "🎨", t: "Gün batımında bir dağ evi çiz", image: true }
+  ];
+
+  var root = document.documentElement;
+  var $msgs = document.getElementById("messages");
+  var $input = document.getElementById("input");
+  var $send = document.getElementById("send");
+  var $clear = document.getElementById("clear");
+  var $theme = document.getElementById("theme");
+  var $note = document.getElementById("note");
+  var $fab = document.getElementById("fab");
+  var $meta = document.querySelector('meta[name="theme-color"]');
+  var $mode = document.getElementById("mode");
+  var $hint = document.getElementById("hint");
+  var HINT = $hint.textContent;
+  var imageMode = false;
+
+  var history = [];
+  var KEY_STORE = "homeasistan:key", MODEL_STORE = "homeasistan:model";
+  var apiKey = "", model = "claude-sonnet-5-5";
+  try { apiKey = localStorage.getItem(KEY_STORE) || ""; model = localStorage.getItem(MODEL_STORE) || model; } catch (e) {}
+
+  async function sampleFn(input, opts) {
+    opts = opts || {};
+    var turns = typeof input === "string" ? [{ role: "user", content: input }] : input;
+    var body = { model: model, max_tokens: opts.maxTokens || 2048, stream: true, messages: turns };
+    if (!opts.noSystem) body.system = SYSTEM;
+    var resp;
+    try {
+      resp = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST", signal: opts.signal,
+        headers: { "content-type": "application/json", "x-api-key": apiKey, "anthropic-version": "2023-06-01", "anthropic-dangerous-direct-browser-access": "true" },
+        body: JSON.stringify(body)
+      });
+    } catch (e) { throw { code: (e && e.name === "AbortError") ? "cancelled" : "network" }; }
+    if (!resp.ok) throw { code: (resp.status === 401 || resp.status === 403) ? "auth" : resp.status === 429 ? "rate_limited" : "api" };
+    var text = "", buf = "";
+    try {
+      var reader = resp.body.getReader(), dec = new TextDecoder();
+      for (;;) {
+        var r = await reader.read();
+        if (r.done) break;
+        buf += dec.decode(r.value, { stream: true });
+        var lines = buf.split("\n"); buf = lines.pop();
+        lines.forEach(function (l) {
+          if (l.indexOf("data:") !== 0) return;
+          var d = l.slice(5).trim();
+          if (!d || d === "[DONE]") return;
+          try {
+            var j = JSON.parse(d);
+            if (j.type === "content_block_delta" && j.delta && j.delta.type === "text_delta") { text += j.delta.text; if (opts.onText) opts.onText({ text: text }); }
+          } catch (e) {}
+        });
+      }
+    } catch (e) { throw { code: (e && e.name === "AbortError") ? "cancelled" : "network" }; }
+    return { text: text };
+  }
+  var busy = false;
+  var controller = null;
+  var stick = true;
+
+  var ICON_SEND = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+  var ICON_STOP = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="5" y="5" width="14" height="14" rx="3"/></svg>';
+  var ICON_SUN = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  var ICON_MOON = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>';
+  var ICON_COPY = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';
+  var AVATAR = '<svg class="avatar" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="url(#g)"/><path d="M11 9h4.6v8h8.8V9H29v22h-4.6v-9.5h-8.8V31H11z" fill="#fff" fill-rule="evenodd"/></svg>';
+
+  /* ---------- storage ---------- */
+  function load() {
+    try { var raw = localStorage.getItem(STORE_KEY); if (raw) { var a = JSON.parse(raw); if (Array.isArray(a)) history = a; } } catch (e) {}
+  }
+  function save() { /* sohbet saklanmaz: uygulama her açıldığında sıfırdan başlar */ }
+
+  /* ---------- theme ---------- */
+  function isDark() {
+    var t = root.getAttribute("data-theme");
+    if (t) return t === "dark";
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function paintTheme() {
+    $theme.innerHTML = isDark() ? ICON_SUN : ICON_MOON;
+    $meta.setAttribute("content", isDark() ? "#0B1020" : "#F5F7FC");
+  }
+  try { var st = localStorage.getItem(THEME_KEY); if (st === "dark" || st === "light") root.setAttribute("data-theme", st); } catch (e) {}
+  paintTheme();
+  $theme.addEventListener("click", function () {
+    var next = isDark() ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem(THEME_KEY, next); } catch (e) {}
+    paintTheme();
+  });
+
+  /* ---------- tiny markdown renderer (DOM only, no innerHTML) ---------- */
+  function el(tag, cls) { var n = document.createElement(tag); if (cls) n.className = cls; return n; }
+  function inline(node, text) {
+    text.split(/(`[^`]+`|\*\*[^*]+\*\*|\*[^*\n]+\*)/).forEach(function (t) {
+      if (!t) return;
+      if (t.length > 2 && t[0] === "`" && t.slice(-1) === "`") { var c = el("code"); c.textContent = t.slice(1, -1); node.appendChild(c); }
+      else if (t.length > 4 && t.indexOf("**") === 0 && t.slice(-2) === "**") { var s = el("strong"); s.textContent = t.slice(2, -2); node.appendChild(s); }
+      else if (t.length > 2 && t[0] === "*" && t.slice(-1) === "*") { var i = el("em"); i.textContent = t.slice(1, -1); node.appendChild(i); }
+      else node.appendChild(document.createTextNode(t));
+    });
+  }
+  function blocks(text, frag) {
+    var para = [], list = null, kind = null;
+    function flushP() { if (para.length) { var p = el("p"); inline(p, para.join("\n")); frag.appendChild(p); para = []; } }
+    text.split("\n").forEach(function (line) {
+      var m;
+      if (!line.trim()) { flushP(); list = null; return; }
+      if ((m = line.match(/^\s*[-*•]\s+(.*)/))) {
+        flushP(); if (!list || kind !== "ul") { list = el("ul"); kind = "ul"; frag.appendChild(list); }
+        var li = el("li"); inline(li, m[1]); list.appendChild(li); return;
+      }
+      if ((m = line.match(/^\s*\d+[.)]\s+(.*)/))) {
+        flushP(); if (!list || kind !== "ol") { list = el("ol"); kind = "ol"; frag.appendChild(list); }
+        var li2 = el("li"); inline(li2, m[1]); list.appendChild(li2); return;
+      }
+      if ((m = line.match(/^#{1,6}\s+(.*)/))) { flushP(); list = null; var h = el("p", "h"); inline(h, m[1]); frag.appendChild(h); return; }
+      list = null; para.push(line);
+    });
+    flushP();
+  }
+  function renderMd(target, text) {
+    var frag = document.createDocumentFragment();
+    text.split("```").forEach(function (part, i) {
+      if (i % 2 === 1) {
+        var nl = part.indexOf("\n");
+        var code = nl > -1 ? part.slice(nl + 1) : part;
+        var pre = el("pre"), c = el("code"); c.textContent = code.replace(/\n$/, ""); pre.appendChild(c); frag.appendChild(pre);
+      } else blocks(part, frag);
+    });
+    target.textContent = "";
+    target.appendChild(frag);
+  }
+
+  /* ---------- scrolling ---------- */
+  function nearBottom() { return $msgs.scrollHeight - $msgs.scrollTop - $msgs.clientHeight < 80; }
+  function toBottom(smooth) { $msgs.scrollTo({ top: $msgs.scrollHeight, behavior: smooth ? "smooth" : "auto" }); }
+  $msgs.addEventListener("scroll", function () { stick = nearBottom(); $fab.classList.toggle("show", !stick); });
+  $fab.addEventListener("click", function () { stick = true; toBottom(true); });
+
+  /* ---------- messages ---------- */
+  function addUser(text) {
+    var r = el("div", "row user"), b = el("div", "bubble"); b.textContent = text; r.appendChild(b); $msgs.appendChild(r);
+  }
+  function addBot(text) {
+    var r = el("div", "row bot");
+    r.insertAdjacentHTML("beforeend", AVATAR);
+    var body = el("div", "body"), content = el("div", "content"), actions = el("div", "actions");
+    body.appendChild(content); body.appendChild(actions); r.appendChild(body); $msgs.appendChild(r);
+    if (text != null) { renderMd(content, text); addCopy(actions, function () { return text; }); }
+    return { content: content, actions: actions };
+  }
+  function addCopy(actions, getText) {
+    var b = el("button", "copy"); b.type = "button"; b.innerHTML = ICON_COPY + "<span>Kopyala</span>";
+    b.addEventListener("click", function () {
+      var t = getText();
+      function done() { b.lastChild.textContent = "Kopyalandı"; setTimeout(function () { b.lastChild.textContent = "Kopyala"; }, 1500); }
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(t).then(done, fallback); }
+        else fallback();
+      } catch (e) { fallback(); }
+      function fallback() {
+        try { var ta = document.createElement("textarea"); ta.value = t; ta.style.position = "fixed"; ta.style.opacity = "0"; document.body.appendChild(ta); ta.select(); document.execCommand("copy"); document.body.removeChild(ta); done(); } catch (e) {}
+      }
+    });
+    actions.appendChild(b);
+  }
+
+  function greeting() {
+    var h = new Date().getHours();
+    if (h >= 5 && h < 11) return "Günaydın!";
+    if (h >= 11 && h < 18) return "İyi günler!";
+    if (h >= 18 && h < 23) return "İyi akşamlar!";
+    return "İyi geceler!";
+  }
+  function showWelcome() {
+    $msgs.textContent = "";
+    var w = el("div", "welcome");
+    var orb = el("div", "orb");
+    orb.innerHTML = '<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M9 6h5.2v11.2h11.6V6H31v28h-5.2V22.4H14.2V34H9z" fill="#fff" fill-rule="evenodd"/></svg>';
+    var h = el("h1"); h.textContent = greeting();
+    var p = el("p"); p.textContent = "Ben Home Asistan. Soru sor, metin yazdır ya da fikir iste.";
+    var g = el("div", "cards");
+    var kb = null;
+    if (!apiKey) { kb = el("button", "keybtn"); kb.type = "button"; kb.textContent = "API anahtarını ekle"; kb.addEventListener("click", openSheet); }
+    SUGGESTIONS.forEach(function (s) {
+      var b = el("button", "card"); b.type = "button";
+      var e = el("span", "e"); e.textContent = s.e;
+      var t = el("span"); t.textContent = s.t;
+      b.appendChild(e); b.appendChild(t);
+      b.addEventListener("click", function () { if (s.image) setMode(true); send(s.t); });
+      g.appendChild(b);
+    });
+    var ow = el("div", "orbwrap");
+    ow.appendChild(orb);
+    ["s1", "s2", "s3", "s4"].forEach(function (c) { var sp = el("span", "sp " + c); sp.textContent = "✦"; sp.setAttribute("aria-hidden", "true"); ow.appendChild(sp); });
+    w.appendChild(ow); w.appendChild(h); w.appendChild(p); if (kb) w.appendChild(kb); w.appendChild(g);
+    $msgs.appendChild(w);
+  }
+  function render() {
+    if (!history.length) { showWelcome(); return; }
+    $msgs.textContent = "";
+    history.forEach(function (m) {
+      if (m.role === "user") addUser(m.content);
+      else if (m.kind === "image" && m.svg) { var b = addBot(null); fillImage(b, m.svg, m.prompt || ""); }
+      else addBot(m.content);
+    });
+    toBottom(false);
+  }
+
+  /* ---------- sending ---------- */
+  function errText(e, retry) {
+    var c = e && e.code;
+    if (c === "auth") return "API anahtarı geçersiz görünüyor. Ayarlardan (⚙) kontrol et.";
+    if (c === "rate_limited") return "Çok hızlı gidiyoruz ya da kullanım sınırına geldin. Biraz bekleyip tekrar dene.";
+    if (c === "network") return "Bağlantı kurulamadı. İnternetini kontrol edip tekrar dene.";
+    return "Bir sorun oluştu. " + retry;
+  }
+  function buildTurns() {
+    var turns = history.slice(-20).map(function (m) { return { role: m.role, content: m.content }; });
+    while (turns.length && turns[0].role !== "user") turns.shift();
+    return turns;
+  }
+  function paintSend() {
+    $send.innerHTML = busy ? ICON_STOP : ICON_SEND;
+    $send.setAttribute("aria-label", busy ? "Durdur" : "Gönder");
+    $send.disabled = !busy && !$input.value.trim();
+  }
+
+  async function send(text) {
+    text = (text || "").trim();
+    if (!text || busy) return;
+    if (!apiKey) { openSheet(); flashNote("Başlamak için önce API anahtarını gir."); return; }
+    $note.hidden = true;
+    if (imageMode) return draw(text);
+    if (!history.length) $msgs.textContent = "";
+    history.push({ role: "user", content: text });
+    addUser(text);
+    $input.value = ""; autosize();
+    var bot = addBot(null);
+    bot.content.innerHTML = '<span class="dots"><i></i><i></i><i></i></span>';
+    stick = true; toBottom(true);
+    busy = true; paintSend();
+    controller = new AbortController();
+    var got = "";
+    try {
+      var res = await sampleFn(buildTurns(), {
+        signal: controller.signal,
+        onText: function (o) { got = o.text; renderMd(bot.content, got); if (stick) toBottom(false); }
+      });
+      got = (res && res.text) || got || "(boş yanıt)";
+      renderMd(bot.content, got);
+      addCopy(bot.actions, function () { return got; });
+      history.push({ role: "assistant", content: got });
+      save();
+    } catch (e) {
+      if (e && e.code === "cancelled") {
+        if (got) { addCopy(bot.actions, function () { return got; }); history.push({ role: "assistant", content: got }); save(); }
+        else { bot.content.parentNode.parentNode.remove(); history.pop(); }
+      } else {
+        history.pop();
+        bot.content.className = "content err";
+        bot.content.textContent = errText(e, "Mesajını tekrar gönder.");
+      }
+    } finally {
+      controller = null; busy = false; paintSend();
+      if (stick) toBottom(true);
+    }
+  }
+
+  /* ---------- image generation (SVG) ---------- */
+  var ICON_DL = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>';
+  var ICON_REDO = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5"/></svg>';
+  var IMG_SYSTEM = "Sen bir SVG illüstratörüsün. Kullanıcının isteğine uygun TEK bir SVG çizimi üret. Kurallar: " +
+    "1) Yanıtında yalnızca <svg ...>...</svg> kodu olsun; açıklama, markdown veya kod çiti ekleme. " +
+    "2) viewBox=\"0 0 512 512\" kullan. " +
+    "3) Harici dosya, font, görsel, script ve foreignObject kullanma. " +
+    "4) Gradyan, katmanlı şekiller, yumuşak gölgeler ve zengin renklerle dengeli, güzel bir kompozisyon çiz. " +
+    "5) Arka planı dolu çiz (saydam bırakma). " +
+    "6) İstenmedikçe yazı ekleme.";
+
+  function setMode(on) {
+    imageMode = on;
+    $mode.classList.toggle("on", on);
+    $mode.setAttribute("aria-pressed", on ? "true" : "false");
+    $input.placeholder = on ? "Ne çizeyim? Örn. denizde yelkenli…" : "Home Asistan'a sor…";
+    $hint.textContent = on ? "Görsel modu açık. Home Asistan isteğini vektör (SVG) çizim olarak hazırlar." : HINT;
+  }
+  $mode.addEventListener("click", function () { setMode(!imageMode); $input.focus(); });
+
+  function cleanSvg(raw) {
+    var m = (raw || "").match(/<svg[\s\S]*<\/svg>/i);
+    if (!m) return null;
+    var doc = new DOMParser().parseFromString(m[0], "image/svg+xml");
+    if (doc.querySelector("parsererror")) return null;
+    var svg = doc.documentElement;
+    if (!svg || svg.nodeName.toLowerCase() !== "svg") return null;
+    svg.querySelectorAll("script,foreignObject,iframe,object,embed,audio,video,image,a").forEach(function (n) { n.remove(); });
+    svg.querySelectorAll("style").forEach(function (n) {
+      n.textContent = n.textContent.replace(/@import[^;]*;?/gi, "").replace(/url\s*\(\s*['"]?\s*(https?:|data:|\/\/)[^)]*\)/gi, "none");
+    });
+    var all = [svg].concat(Array.prototype.slice.call(svg.querySelectorAll("*")));
+    all.forEach(function (n) {
+      Array.prototype.slice.call(n.attributes).forEach(function (a) {
+        var name = a.name.toLowerCase(), v = a.value;
+        if (name.indexOf("on") === 0) n.removeAttribute(a.name);
+        else if ((name === "href" || name === "xlink:href") && v.trim().charAt(0) !== "#") n.removeAttribute(a.name);
+        else if (/url\s*\(\s*['"]?\s*(https?:|data:|\/\/)/i.test(v)) n.removeAttribute(a.name);
+      });
+    });
+    if (!svg.getAttribute("viewBox")) svg.setAttribute("viewBox", "0 0 512 512");
+    svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    svg.removeAttribute("width"); svg.removeAttribute("height");
+    return new XMLSerializer().serializeToString(svg);
+  }
+  function svgUri(s) { return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(s); }
+
+  function toPngBlob(svg) {
+    return new Promise(function (resolve, reject) {
+      var d = new DOMParser().parseFromString(svg, "image/svg+xml").documentElement;
+      var vb = (d.getAttribute("viewBox") || "0 0 512 512").trim().split(/[\s,]+/).map(Number);
+      var w = vb[2] || 512, h = vb[3] || 512, k = 1024 / Math.max(w, h);
+      var W = Math.round(w * k), H = Math.round(h * k);
+      d.setAttribute("width", W); d.setAttribute("height", H);
+      var im = new Image();
+      im.onload = function () {
+        var c = document.createElement("canvas"); c.width = W; c.height = H;
+        c.getContext("2d").drawImage(im, 0, 0, W, H);
+        c.toBlob(function (b) { b ? resolve(b) : reject(new Error("png")); }, "image/png");
+      };
+      im.onerror = reject;
+      im.src = svgUri(new XMLSerializer().serializeToString(d));
+    });
+  }
+  var noteTimer = null;
+  function flashNote(msg) {
+    $note.hidden = false; $note.textContent = msg;
+    clearTimeout(noteTimer); noteTimer = setTimeout(function () { $note.hidden = true; }, 4000);
+  }
+  function toBase64(data) {
+    return new Promise(function (resolve, reject) {
+      if (typeof data === "string") { try { resolve(btoa(unescape(encodeURIComponent(data)))); } catch (e) { reject(e); } return; }
+      var r = new FileReader();
+      r.onload = function () { resolve(String(r.result).split(",")[1]); };
+      r.onerror = reject; r.readAsDataURL(data);
+    });
+  }
+  async function saveFile(data, filename) {
+    var P = window.Capacitor && window.Capacitor.Plugins;
+    if (P && P.Filesystem && P.Share) {
+      try {
+        var w = await P.Filesystem.writeFile({ path: filename, data: await toBase64(data), directory: "CACHE" });
+        await P.Share.share({ title: filename, url: w.uri, dialogTitle: "Kaydet veya paylaş" });
+        return true;
+      } catch (e) {
+        if (!(e && /cancel|dismiss/i.test(String(e.message || e)))) flashNote("Dosya kaydedilemedi. Tekrar dene.");
+        return false;
+      }
+    }
+    try {
+      var blob = (typeof data === "string") ? new Blob([data], { type: "image/svg+xml" }) : data;
+      var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = filename;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function () { URL.revokeObjectURL(a.href); }, 4000);
+      return true;
+    } catch (e) { flashNote("Dosya kaydedilemedi. Tekrar dene."); return false; }
+  }
+  function addBtn(actions, icon, label, fn) {
+    var b = el("button", "copy"); b.type = "button"; b.innerHTML = icon + "<span></span>";
+    var lab = b.lastChild; lab.textContent = label;
+    b.addEventListener("click", async function () {
+      var r = await fn();
+      if (r === true) { lab.textContent = "Kaydedildi"; setTimeout(function () { lab.textContent = label; }, 1500); }
+    });
+    actions.appendChild(b);
+  }
+  function fillImage(bot, svg, prompt) {
+    bot.content.textContent = "";
+    var card = el("div", "imgcard"), img = new Image();
+    img.alt = prompt || "Home Asistan görseli"; img.src = svgUri(svg);
+    card.appendChild(img); bot.content.appendChild(card);
+    bot.actions.textContent = "";
+    var id = Date.now().toString(36);
+    addBtn(bot.actions, ICON_DL, "PNG", async function () {
+      try { return await saveFile(await toPngBlob(svg), "home-asistan-gorsel-" + id + ".png"); }
+      catch (e) { flashNote("PNG hazırlanamadı. SVG olarak indirmeyi dene."); return false; }
+    });
+    addBtn(bot.actions, ICON_DL, "SVG", function () { return saveFile(svg, "home-asistan-gorsel-" + id + ".svg"); });
+    addBtn(bot.actions, ICON_REDO, "Yeniden çiz", function () { if (!busy) draw(prompt, { fresh: true }); });
+  }
+  function lastSvg() {
+    for (var i = history.length - 1; i >= 0; i--) if (history[i].kind === "image" && history[i].svg) return history[i].svg;
+    return null;
+  }
+
+  async function draw(text, opts) {
+    opts = opts || {};
+    if (!history.length) $msgs.textContent = "";
+    history.push({ role: "user", content: text });
+    addUser(text);
+    $input.value = ""; autosize();
+    var bot = addBot(null);
+    bot.content.innerHTML = '<div class="imgph"><span class="dots"><i></i><i></i><i></i></span><span>Çiziyor…</span></div>';
+    stick = true; toBottom(true);
+    busy = true; paintSend();
+    controller = new AbortController();
+    var prev = opts.fresh ? null : lastSvg();
+    var prompt = IMG_SYSTEM +
+      (prev ? "\n\nÖnceki çizim (istek bunu değiştirmekle ilgiliyse bu çizimi düzenle, değilse sıfırdan yeni çiz):\n" + prev.slice(0, 12000) : "") +
+      "\n\nİstek: " + text;
+    try {
+      var res = await sampleFn(prompt, { signal: controller.signal, noSystem: true, maxTokens: 8000 });
+      var svg = cleanSvg(res && res.text);
+      if (!svg) throw { code: "bad_svg" };
+      fillImage(bot, svg, text);
+      history.push({ role: "assistant", kind: "image", svg: svg, prompt: text, content: "[Görsel üretildi: " + text + "]" });
+      save();
+    } catch (e) {
+      history.pop();
+      if (e && e.code === "cancelled") { bot.content.parentNode.parentNode.remove(); }
+      else {
+        bot.content.className = "content err";
+        bot.content.textContent = (e && e.code === "bad_svg") ? "Çizim oluşturulamadı. İsteğini biraz daha farklı anlatıp tekrar dene." : errText(e, "İsteğini tekrar gönder.");
+      }
+    } finally {
+      controller = null; busy = false; paintSend();
+      if (stick) toBottom(true);
+    }
+  }
+
+  function autosize() { $input.style.height = "auto"; $input.style.height = Math.min($input.scrollHeight, 140) + "px"; }
+
+  $send.addEventListener("click", function () { if (busy && controller) controller.abort(); else send($input.value); });
+  $input.addEventListener("input", function () { autosize(); paintSend(); });
+  $input.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" && !e.shiftKey && window.matchMedia("(hover: hover)").matches) { e.preventDefault(); send($input.value); }
+  });
+  $clear.addEventListener("click", function () {
+    if (controller) controller.abort();
+    history = []; save(); render(); $input.focus();
+  });
+
+  try { localStorage.removeItem(STORE_KEY); } catch (e) {}
+
+  /* ---------- settings ---------- */
+  var $sheet = document.getElementById("sheet"), $key = document.getElementById("keyInput"), $model = document.getElementById("modelSel");
+  function openSheet() { $key.value = apiKey; $model.value = model; $sheet.hidden = false; setTimeout(function () { $key.focus(); }, 50); }
+  function closeSheet() { $sheet.hidden = true; }
+  document.getElementById("settings").addEventListener("click", openSheet);
+  document.getElementById("sheetCancel").addEventListener("click", closeSheet);
+  $sheet.addEventListener("click", function (e) { if (e.target === $sheet) closeSheet(); });
+  document.getElementById("sheetSave").addEventListener("click", function () {
+    apiKey = $key.value.trim(); model = $model.value;
+    try { localStorage.setItem(KEY_STORE, apiKey); localStorage.setItem(MODEL_STORE, model); } catch (e) {}
+    closeSheet(); $note.hidden = true;
+    if (!history.length) render();
+  });
+  document.getElementById("keyRemove").addEventListener("click", function () {
+    apiKey = ""; $key.value = "";
+    try { localStorage.removeItem(KEY_STORE); } catch (e) {}
+    closeSheet(); if (!history.length) render();
+  });
+  render(); paintSend();
+})();
+</script>
+</body>
+</html>

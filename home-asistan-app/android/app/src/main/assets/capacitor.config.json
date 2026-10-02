@@ -1,0 +1,9 @@
+{
+	"appId": "com.homeasistan.app",
+	"appName": "Home Asistan",
+	"webDir": "www",
+	"backgroundColor": "#4457FF",
+	"android": {
+		"allowMixedContent": false
+	}
+}
